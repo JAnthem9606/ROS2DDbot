@@ -42,22 +42,22 @@ source install/setup.bash
 
 1. **Send velocity commands:**
    ```bash
-   ros2 run diff_drive_bot drive_cmd.py
+   ros2 run diff_drive_bot drive_cmd
    ```
 
 2. **Convert `cmd_vel` to wheel encoder ticks:**
    ```bash
-   ros2 run diff_drive_bot twist_to_wheels.py
+   ros2 run diff_drive_bot twist_to_wheels
    ```
 
 3. **Compute odometry from encoder data:**
    ```bash
-   ros2 run diff_drive_bot diff_tf.py
+   ros2 run diff_drive_bot diff_tf
    ```
 
 4. **Publish robot path:**
    ```bash
-   ros2 run diff_drive_bot trajectory_publisher.py
+   ros2 run diff_drive_bot trajectory_publisher
    ```
 
 ---
