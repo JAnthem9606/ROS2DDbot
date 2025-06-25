@@ -21,8 +21,8 @@ def main():
 
         # Stop condition: reset speeds to zero if no movement commanded
         if linear_x == 0 and angular_z == 0:
-            lwspeed = 0
-            rwspeed = 0
+            lwspeed = lwspeed
+            rwspeed = rwspeed
             
         if linear_x > 0:
             lwspeed += linear_x
